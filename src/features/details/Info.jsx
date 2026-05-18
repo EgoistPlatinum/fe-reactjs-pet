@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { useNeighbors } from './use-neighbors';
 
 const Wrapper = styled.section`
   margin-top: 3rem;
@@ -101,9 +100,8 @@ export const Info = (props) => {
     languages = [],
     borders = [],
     push,
+    neighbors
   } = props;
-
-  const neighbors = useNeighbors(borders);
 
   return (
     <Wrapper>
